@@ -1,3 +1,7 @@
+public class arithmetic md 01 {
+    public static void main(String[] args) {
+
+
 # Exercise 4 — Predict, Then Run
 
 **Fill in the PREDICTED column completely before you run any code.** That's the whole exercise. Checking the answer without committing to a guess teaches you nothing.
@@ -61,3 +65,5 @@ I could use % in a project that alternates between two people taking turns. For 
 
 if (turn % 2 == 0)
 I could use that to determine whether it is the first player's turn or the second player's turn.
+    }
+}
