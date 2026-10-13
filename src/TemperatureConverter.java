@@ -14,7 +14,13 @@ public class TemperatureConverter {
         double fahrenheit = 98.6;
         double celsius = 37.0;
 
-        // Your code here
+        // Fahrenheit to Celsius
+        double convertedCelsius = (fahrenheit - 32) * 5.0 / 9;
+        
+        // Celsius to Fahrenheit
+        double convertedFahrenheit = celsius * 9.0 / 5 + 32;
 
+        System.out.printf("Fahrenheit to Celsius: %.1f°C%n", convertedCelsius);
+        System.out.printf("Celsius to Fahrenheit: %.1f°F%n", convertedFahrenheit);
     }
 }
