@@ -15,7 +15,12 @@ public class AverageCalculator {
         int score4 = 95;
         int score5 = 83;
 
-        // Your code here
+        // Calculate the total
+        int total = score1 + score2 + score3 + score4 + score5;
 
+        // Cast total to double to avoid integer division
+        double average = (double) total / 5;
+
+        System.out.printf("Average score: %.1f%n", average);
     }
 }
