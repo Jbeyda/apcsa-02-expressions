@@ -6,18 +6,20 @@ Predict first. Then run.
 
 | # | Expression | Predicted | Actual |
 |---|---|---|---|
-| 1 | `(int) 9.99` | | |
-| 2 | `(int) -9.99` | | |
-| 3 | `Math.round(9.5)` | | |
-| 4 | `Math.round(9.4)` | | |
-| 5 | `Math.round(-9.5)` | | |
-| 6 | `(double) 7 / 2` | | |
-| 7 | `(double) (7 / 2)` | | |
-| 8 | `Math.round(3.14159 * 100) / 100.0` | | |
+| 1 | `(int) 9.99` | 9 | 9 |
+| 2 | `(int) -9.99` | -9 | -9 |
+| 3 | `Math.round(9.5)` | 10 | 10 |
+| 4 | `Math.round(9.4)` | 9 | 9 |
+| 5 | `Math.round(-9.5)` | -9 | -9 |
+| 6 | `(double) 7 / 2` | 3.5 | 3.5 |
+| 7 | `(double) (7 / 2)` | 3.0 | 3.0 |
+| 8 | `Math.round(3.14159 * 100) / 100.0` | 3.14 | 3.14 |
 
 **#6 and #7 look almost identical and give different answers. Explain the difference precisely.**
 
-[your answer]
+In #6, (double) 7 / 2, the integer 7 is converted to a double before division. Java therefore performs floating-point division, giving 3.5.
+
+In #7, (double) (7 / 2), Java evaluates 7 / 2 first using integer division, which gives 3. It then converts the result to a double, producing 3.0. Casting the result after division cannot restore the discarded decimal portion.
 
 ---
 

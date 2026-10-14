@@ -13,7 +13,7 @@
  * (Yes — these are this course's actual weights. Use them to
  *  work out what your own grade would be.)
  */
-public class GradeAverage {
+    public class GradeAverage {
     public static void main(String[] args) {
         double homework = 88;
         double classwork = 94;
@@ -21,7 +21,12 @@ public class GradeAverage {
         double project = 90;
         double participation = 100;
 
-        // Your code here
+        double average = homework * 0.15
+                       + classwork * 0.25
+                       + tests * 0.25
+                       + project * 0.25
+                       + participation * 0.10;
 
+        System.out.printf("Weighted average: %.1f%%%n", average);
     }
 }
