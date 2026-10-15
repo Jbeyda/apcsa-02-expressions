@@ -20,7 +20,7 @@ public class TipCalculator {
 
         double tip = Math.round(billAmount * tipPercent / 100.0 * 100) / 100.0;
         double total = Math.round((billAmount + tip) * 100) / 100.0;
-        double share = Math.round(total / people * 100) / 100.0;
+        double share = Math.round(((total / 4) * 100) / 100);
 
         System.out.printf("Tip: $%.2f%n", tip);
         System.out.printf("Total: $%.2f%n", total);
